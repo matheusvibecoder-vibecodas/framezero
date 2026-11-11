@@ -65,6 +65,19 @@ function letters(el, t, a, { step = .03, d = .32, dy = -120, rot = 14 } = {}) {
     pose(s, { y: lerp(dy, 0, E.back(p)), r: lerp(i % 2 ? rot : -rot, 0, E.out(p)), o: p > 0 ? Math.min(1, p * 4) : 0 }); });
 }
 
+/* Original text of every element typewriter() has seen, captured on its first call. */
+const typewriterText = new WeakMap();
+/** Typewriter: shows floor((t - start) * cps) characters of el's original text.
+ * The text is written back with textContent, never innerHTML, so markup in the text
+ * (code, `<tags>`) is typed literally and cannot break the page. Pure in t: seeking
+ * backwards un-types, and the shown prefix depends only on t, start and cps. */
+function typewriter(el, t, start, cps) {
+  if (!el) return;
+  if (!typewriterText.has(el)) typewriterText.set(el, el.textContent);
+  const full = typewriterText.get(el);
+  el.textContent = full.slice(0, clamp(Math.floor((t - start) * cps), 0, full.length));
+}
+
 /* ---------- phone camera ----------
  * The app UI is drawn at its real size (e.g. 390x844 CSS px) inside a phone, scaled by k.
  * makeCamera() returns helpers that move a "camera" so that a point of the APP lands on a point of the VIDEO.
