@@ -9,7 +9,7 @@
 
 Feito para **pessoas** e para **agentes de IA** (Claude Code, Codex, Cursor, Copilot, Gemini CLI…).
 
-[English](README.md) · **Português**
+[English](README.md) · **Português** · [Español](LEEME.md)
 
 <img src="media/estuda-tour-hook.gif" width="230" alt="vídeo do estuda+">&nbsp;&nbsp;<img src="media/starter.gif" width="230" alt="template">&nbsp;&nbsp;<img src="media/estuda-tour-challenge.gif" width="230" alt="desafio do dia">
 
