@@ -15,7 +15,7 @@ Written for **humans** *and* for **AI coding agents** (Claude Code, Codex, Curso
 [![AGENTS.md](https://img.shields.io/badge/AGENTS.md-included-13D18C)](AGENTS.md)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-FF7A52)](CONTRIBUTING.md)
 
-**[Website](https://matheusvibecoder-vibecodas.github.io/framezero/)** · **English** · [Português](LEIAME.md)
+**[Website](https://matheusvibecoder-vibecodas.github.io/framezero/)** · **English** · [Português](LEIAME.md) · [Español](LEEME.md)
 
 <img src="media/estuda-tour-hook.gif" width="230" alt="estuda+ tour video — hook">&nbsp;&nbsp;<img src="media/starter.gif" width="230" alt="starter template">&nbsp;&nbsp;<img src="media/estuda-tour-challenge.gif" width="230" alt="estuda+ tour video — daily challenge">
 
